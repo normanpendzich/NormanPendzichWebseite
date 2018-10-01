@@ -10,7 +10,7 @@ So können Sie das Template nutzen:
 
 2. Bennen Sie den Ordner Html Template nach Ihren Wünschen um.
 
-3. Öffnen Sie die Eingabeaufforderung und navigieren Sie zu dem Orner. Bsp.:
+3. Öffnen Sie die Eingabeaufforderung und navigieren Sie zu dem Ordner. Bsp.:
 
 	c:\users\MaxMustermann> cd desktop\html template
 
