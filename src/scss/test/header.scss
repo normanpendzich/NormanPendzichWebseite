@@ -2,16 +2,13 @@
 @import "mixins";
 
 
-  .hero-header {
-    padding: 0;
-    background-color: blueviolet;
-  }
+
 
   .hero-bg-box {
     background-color: $primary-color;
     position: relative;
     width: 100vw;
-    height: 1334px;
+    height: 136.05442176870747vh;
 
   }
 
@@ -31,7 +28,7 @@
   .hero-border-box {
     position: absolute;
     z-index: 2;
-    top: 97.31182795698925vw;
+    bottom: 135px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -43,6 +40,7 @@
   }
 
   .hero-image {
+    display: none;
     position: absolute;
     z-index: 3;
     top: 63.97849462365591vw;
@@ -61,7 +59,8 @@
     color: white;
     position: absolute;
     z-index: 4;
-    top: 129.03225806451613vw;
+    bottom: 356px;
+    //top: 129.03225806451613vw;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -76,7 +75,8 @@
     color: white;
     position: absolute;
     z-index: 4;
-    top: 120.16129032258065vw;
+    bottom: 500px;
+    //top: 120.16129032258065vw;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -87,9 +87,95 @@
 
 
 
-@include respond(tab-land) {
+
+@include respond(phone-land) {
+////////////////////////////Überarbeten////////////////////////////////
+  header {
+    display: none;
+  }
   .hero-border-box {
+    top: 42.05729166666667vh;
+    border: 20px solid $tertiary-color;
+
+    width: 36.5234375vw;
+    height: 69.53125vh;
+    display: none;
+  }
+
+  .hero-h1-first {
+    top: 59.84375000000001vh;
+    font-size: $font-size-h1-first-tablet;
+    display: none;
+
+  }
+
+  .hero-h1-second {
+    top: 54.088541666666664vh;
+    font-size: $font-size-h1-second-tablet;
     display: none;
   }
 }
+
+@include respond(phone-land) {
+header {
+  .hero-border-box{
+    display: none;
+  }
+}
+}
+
+
+@include respond(tab-port) {
+  .hero-border-box {
+    top: 56.54296875vh;
+    border: 20px solid $tertiary-color;
+
+    width: 48.69791666666667vw;
+    height: 52.1484375vh;
+
+  }
+
+  .hero-h1-first {
+    top: 69.8828125vh;
+    font-size: $font-size-h1-first-tablet;
+
+  }
+
+  .hero-h1-second {
+    top: 65.56640625vh;
+    font-size: $font-size-h1-second-tablet;
+
+  }
+}
+
+
+@include respond(little-desktop) {
+
+  .hero-bg-image {
+    width: 100vw;
+    height: 837px;
+  }
+
+  .hero-border-box {
+    top: 392px;
+    border: 20px solid $tertiary-color;
+    width: 374px;
+    height: 534px;
+
+  }
+
+  .hero-h1-first {
+    top: 528.6px;
+    font-size: $font-size-h1-first-tablet;
+
+  }
+
+  .hero-h1-second {
+    top: 484.4px;
+    font-size: $font-size-h1-second-tablet;
+
+  }
+}
+
+
 

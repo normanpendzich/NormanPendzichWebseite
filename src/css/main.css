@@ -15,15 +15,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
-.hero-header {
-  padding: 0;
-  background-color: blueviolet; }
-
 .hero-bg-box {
   background-color: #FFFFFF;
   position: relative;
   width: 100vw;
-  height: 1334px; }
+  height: 136.05442176870747vh; }
 
 .hero-bg-image {
   background-color: #5B5B5B;
@@ -38,7 +34,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .hero-border-box {
   position: absolute;
   z-index: 2;
-  top: 97.31182795698925vw;
+  bottom: 135px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -47,6 +43,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   height: 60.136054421768705vh; }
 
 .hero-image {
+  display: none;
   position: absolute;
   z-index: 3;
   top: 63.97849462365591vw;
@@ -62,7 +59,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: white;
   position: absolute;
   z-index: 4;
-  top: 129.03225806451613vw;
+  bottom: 356px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -75,7 +72,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: white;
   position: absolute;
   z-index: 4;
-  top: 120.16129032258065vw;
+  bottom: 500px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -83,15 +80,62 @@ ORDER: Base + typography > general layout + grid > page layout > components
   text-align: center;
   font-weight: lighter; }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 412px) and (max-width: 824px) and (orientation: landscape) {
+  header {
+    display: none; }
   .hero-border-box {
+    top: 42.05729166666667vh;
+    border: 20px solid #E45353;
+    width: 36.5234375vw;
+    height: 69.53125vh;
+    display: none; }
+  .hero-h1-first {
+    top: 59.84375000000001vh;
+    font-size: 90px;
+    display: none; }
+  .hero-h1-second {
+    top: 54.088541666666664vh;
+    font-size: 16px;
     display: none; } }
+
+@media only screen and (min-width: 412px) and (max-width: 824px) and (orientation: landscape) {
+  header .hero-border-box {
+    display: none; } }
+
+@media only screen and (min-width: 768px) {
+  .hero-border-box {
+    top: 56.54296875vh;
+    border: 20px solid #E45353;
+    width: 48.69791666666667vw;
+    height: 52.1484375vh; }
+  .hero-h1-first {
+    top: 69.8828125vh;
+    font-size: 90px; }
+  .hero-h1-second {
+    top: 65.56640625vh;
+    font-size: 16px; } }
+
+@media only screen and (min-width: 1024px) {
+  .hero-bg-image {
+    width: 100vw;
+    height: 837px; }
+  .hero-border-box {
+    top: 392px;
+    border: 20px solid #E45353;
+    width: 374px;
+    height: 534px; }
+  .hero-h1-first {
+    top: 528.6px;
+    font-size: 90px; }
+  .hero-h1-second {
+    top: 484.4px;
+    font-size: 16px; } }
 
 body {
   background-color: palevioletred;
   font-family: Roboto, serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: lighter;
   margin: 0;
   padding: 0;
   display: block; }
