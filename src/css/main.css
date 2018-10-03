@@ -1,18 +1,26 @@
-body {
-  background-color: palevioletred;
-  font-family: Roboto, serif;
-  font-style: normal;
-  font-weight: 300;
-  margin: 0;
-  padding: 0;
-  display: block; }
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
 
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 .hero-header {
   padding: 0;
   background-color: blueviolet; }
 
 .hero-bg-box {
-  background-color: white;
+  background-color: #FFFFFF;
   position: relative;
   width: 100vw;
   height: 1334px; }
@@ -25,7 +33,7 @@ body {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 100vw;
-  height: 179.30107526881721vw; }
+  height: 100vh; }
 
 .hero-border-box {
   position: absolute;
@@ -34,21 +42,17 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  border: 2.6881720430107525vw solid #E45353;
-  width: 65.32258064516128VW;
-  height: 100vw; }
+  border: 2.68817vw solid #E45353;
+  width: 65.32258064516128vw;
+  height: 60.136054421768705vh; }
 
 .hero-image {
-  display: none;
-  background-color: rgba(150, 165, 174, 0.55);
   position: absolute;
   z-index: 3;
   top: 63.97849462365591vw;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 61.29032258064516vw;
-  height: 166.66666666666669vw; }
+  transform: translateX(-50%); }
 
 .hero-h1 {
   padding: 0;
@@ -78,3 +82,16 @@ body {
   font-size: 3.225806451612903vw;
   text-align: center;
   font-weight: lighter; }
+
+@media only screen and (min-width: 1024px) {
+  .hero-border-box {
+    display: none; } }
+
+body {
+  background-color: palevioletred;
+  font-family: Roboto, serif;
+  font-style: normal;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  display: block; }
